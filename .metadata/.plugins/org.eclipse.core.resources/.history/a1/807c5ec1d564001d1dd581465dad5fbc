@@ -1,0 +1,35 @@
+package com.core.SpringCoreDemo.ReferenceInjection;
+
+public class Object1 {
+
+	private int x;
+	private Object2 ob2;
+
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public Object2 getOb2() {
+		return ob2;
+	}
+
+	public void setOb2(Object2 ob2) {
+		this.ob2 = ob2;
+	}
+
+	public Object1(int x, Object2 ob2) {
+		super();
+		this.x = x;
+		this.ob2 = ob2;
+	}
+
+	@Override
+	public String toString() {
+		return "Object1 [x=" + x + ", ob2=" + ob2 + "]";
+	}
+
+}

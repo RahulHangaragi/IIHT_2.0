@@ -1,0 +1,5 @@
+package com.core.SpringCoreDemo.ReferenceInjection;
+
+public class Object1 {
+
+}

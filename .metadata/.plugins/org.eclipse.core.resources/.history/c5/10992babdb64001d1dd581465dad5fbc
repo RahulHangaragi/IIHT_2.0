@@ -1,0 +1,15 @@
+package com.core.SpringCoreDemo.ReferenceInjectionTest;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/core/SpringCoreDemo/ReferenceInjectionTest/StuConfig.xml");
+		StudentDetails temp = (StudentDetails) context.getBean("studentSubjects");
+		System.out.println(temp.getStudentName());
+
+	}
+
+}
