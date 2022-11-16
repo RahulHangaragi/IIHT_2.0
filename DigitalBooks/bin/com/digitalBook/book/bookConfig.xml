@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.digitalBook.book.BookInfo" name="bookInfo">
+		<property name="bookTitle" value="The Alchemist" />
+		<property name="logo" value="___:>" />
+		<property name="authorName" value="Sydney Sheldon" />
+		<property name="category" value="Mystery" />
+		<property name="price" value="399" />
+		<property name="publisher" value="Innovative_Publishers" />
+		<property name="publishedDate" value="12/12/2012" />
+		<property name="active" value="true" />
+	</bean>
+</beans>

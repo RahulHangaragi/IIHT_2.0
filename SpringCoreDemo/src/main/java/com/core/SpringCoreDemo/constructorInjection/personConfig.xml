@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.core.SpringCoreDemo.constructorInjection.Person" name="person1">
+		<constructor-arg value="Patri Bro"/>
+		<constructor-arg value="001"/>
+		<constructor-arg ref="cperson5" />
+	</bean>
+	<bean class="com.core.SpringCoreDemo.constructorInjection.Person" name="person2">
+		<constructor-arg value="Siddesh"/>
+		<constructor-arg value="002"/>
+		<constructor-arg ref="cperson5" />
+	</bean>
+	<bean class="com.core.SpringCoreDemo.constructorInjection.Person" name="person3">
+		<constructor-arg value="Kiran Shetty"/>
+		<constructor-arg value="003"/>
+		<constructor-arg ref="cperson5" />
+	</bean>
+	<bean class="com.core.SpringCoreDemo.constructorInjection.Person" name="person4">
+		<constructor-arg value="Kalyan"/>
+		<constructor-arg value="004"/>
+		<constructor-arg ref="cperson5" />
+	</bean>
+	<bean class="com.core.SpringCoreDemo.constructorInjection.Certificate" name="cperson5">
+		<constructor-arg value="Ravi"/>
+	</bean>
+	
+	<bean class="com.core.SpringCoreDemo.constructorInjection.Addition" name="add1">
+		<constructor-arg value="1000" type="double"/>
+		<constructor-arg value="500" type="double"/>
+	</bean>
+
+</beans>
