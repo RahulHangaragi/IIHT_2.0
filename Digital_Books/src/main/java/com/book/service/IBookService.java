@@ -12,5 +12,9 @@ public interface IBookService {
 	Optional<Book> getBook(Integer id);
 	
 	public List<Book> getAllBooks();
+	
+	public void deleteBook(Integer id);
+	
+	Book updateBook(Book book, Integer id);
 
 }
