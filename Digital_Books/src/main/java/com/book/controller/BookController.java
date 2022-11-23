@@ -23,9 +23,9 @@ public class BookController {
 	@Autowired
 	IBookService bookService;
 	
-	@GetMapping("/")
-	public String home() {
-		return "Welcome to Digital Book Library!";
+	@GetMapping("/home")
+	public String homePage() {
+		return " Welcome to Digital Library!! ";
 	}
 	
 	@PostMapping("/addbook")

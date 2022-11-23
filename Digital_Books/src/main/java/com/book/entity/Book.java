@@ -108,8 +108,8 @@ public class Book {
 		this.active = active;
 	}
 
-	public Book(String bookTitle, String logo, String category, int price, String publisher, Date publishedDate,
-			int chapters, boolean active) {
+	public Book(String bookTitle, String logo, String category, int price, String publisher,
+			Date publishedDate, int chapters, boolean active) {
 		super();
 		this.bookTitle = bookTitle;
 		this.logo = logo;
@@ -127,9 +127,9 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "Book [BookId=" + BookId + ", bookTitle=" + bookTitle + ", logo=" + logo + ", category=" + category
-				+ ", price=" + price + ", publisher=" + publisher + ", publishedDate=" + publishedDate + ", chapters="
-				+ chapters + ", active=" + active + "]";
+		return "Book [BookId=" + BookId + ", bookTitle=" + bookTitle + ", authinfo=" + ", logo=" + logo
+				+ ", category=" + category + ", price=" + price + ", publisher=" + publisher + ", publishedDate="
+				+ publishedDate + ", chapters=" + chapters + ", active=" + active + "]";
 	}
 
 }
